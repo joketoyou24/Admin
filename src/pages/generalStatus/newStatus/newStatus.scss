@@ -1,0 +1,14 @@
+.newStatus {
+  display: flex;
+  height: 160vh;
+
+  .status__container {
+    flex: 6;
+    background-color: rgba(249, 249, 251, 255);
+
+    .status__content {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

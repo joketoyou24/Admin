@@ -1,0 +1,45 @@
+.employee {
+  display: flex;
+
+  .employee__container {
+    flex: 6;
+    background-color: rgba(249, 249, 251, 255);
+
+    .link{
+      text-decoration: none;
+    }
+
+    .table__container {
+      display: flex;
+      flex-direction: column;
+      width: 1280px;
+      height: 700px;
+      text-align: center;
+      background-color: #ffffff;
+      margin: 30px 10px 30px 10px;
+      border-radius: 12px;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+      .button__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+
+        .new__button {
+          display: flex;
+          
+          padding: 7px;
+          margin: 30px 30px 0 0;
+          align-items: center;
+          background-color: #1751f0;
+          border-radius: 9px;
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.attendance {
+  display: flex;
+  height: 160vh;
+
+  .attendance__container {
+    flex: 6;
+    background-color: rgba(249, 249, 251, 255);
+
+    .attendance__content {
+      display: flex;
+      justify-content: center;
+
+      .content__box {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0 0 0;
+        width: 97%;
+        height: 130vh;
+        background-color: #ffffff;
+        border-radius: 7px;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+        .contentBox__form {
+          display: flex;
+
+          .formSort {
+            display: flex;
+            flex-direction: row;
+            margin-top: 30px;
+
+            .filterBtn{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-left: 10px;
+              cursor: pointer;
+              background-color: #003443;
+              height: 55px;
+              width: 100px;
+              border-radius: 10px;
+              border: 1px solid #e0e0e0;
+              padding: 0 20px 0 20px;
+              color: #ffffff;
+              font-size: 12px;
+            }
+
+            .input__box {
+              margin-top: 10px;
+              margin-left: 20px;
+              background-color: #fff;
+              height: 40px;
+              width: 160px;
+              border-radius: 8px;
+              border: 1px solid #e0e0e0;
+              padding: 0 10px 0 10px;
+              cursor: text;
+
+              .input__box::placeholder {
+                color: #8e8e93;
+              }
+            }
+          }
+
+          .formSubmit {
+            display: flex;
+            .selectEmployee {
+              margin: 30px 0 0 60px;
+              .dropdown__employee {
+                background-color: #fff;
+                height: 55px;
+                width: 180px;
+                border-radius: 8px;
+                border: 1px solid #e0e0e0;
+                padding: 0 20px 0 10px;
+              }
+            }
+
+            .buttonSubmit {
+              margin: 30px 0 0 20px;
+              .button__submit {
+                background-color: #003443;
+                height: 55px;
+                width: 100px;
+                border-radius: 10px;
+                border: 1px solid #e0e0e0;
+                padding: 0 20px 0 20px;
+                color: #ffffff;
+                font-size: 12px;
+                cursor: pointer;
+              }
+            }
+
+            .buttonReports {
+              margin: 30px 0 0 20px;
+              .button__reports {
+                background-color: #003443;
+                height: 55px;
+                width: 100px;
+                border-radius: 10px;
+                border: 1px solid #e0e0e0;
+                padding: 0 20px 0 20px;
+                color: #ffffff;
+                font-size: 12px;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.export__container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+
+  button {
+    display: flex;
+    border: none;
+    width: 100px;
+    border-radius: 7px;
+    background-color: #1751f0;
+    color: #ffff;
+    font-weight: 600;
+    padding: 9px;
+    margin: 20px 30px 0 0;
+    cursor: pointer;
+    justify-content: center;
+  }
+}
+
+.header-cell {
+  font-weight: 600;
+}
+
+.edit {
+  color: #624de3;
+  margin-right: 7px;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.delete {
+  color: #a30d11;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.MuiDataGrid-row:nth-child(odd) {
+  background-color: #f6f7fe;
+}
+
+.MuiDataGrid-row:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.table {
+  margin-top: 30px;
+
+  .tableHead {
+    font-weight: 600;
+  }
+
+  .status {
+    padding: 7px;
+    border-radius: 11px;
+
+    &.Active {
+      color: #1f9254;
+      background-color: #ebf9f1;
+      font-weight: 600;
+    }
+    &.Non-Active {
+      color: #a30d11;
+      background-color: #fbe7e8;
+      font-weight: 600;
+    }
+  }
+}

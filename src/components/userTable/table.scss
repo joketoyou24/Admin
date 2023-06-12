@@ -1,0 +1,55 @@
+.export__container {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+
+  button {
+    display: flex;
+    border: none;
+    width: 100px;
+    border-radius: 7px;
+    background-color: #1751f0;
+    color: #ffff;
+    font-weight: 600;
+    padding: 9px;
+    margin: 20px 30px 0 0;
+    cursor: pointer;
+    justify-content: center;
+  }
+}
+
+.table {
+  margin-top: 30px;
+
+  .tableHead {
+    font-weight: 600;
+  }
+
+  .tableCell__action {
+    .edit {
+      color: #624de3;
+      margin-right: 7px;
+      cursor: pointer;
+      font-size: 2em;
+    }
+
+    .delete {
+      color: #a30d11;
+      cursor: pointer;
+      font-size: 2em;
+    }
+    .odd {
+      background-color: #ffffff;
+    }
+    .even {
+      background-color: #f6f7fe;
+    }
+  }
+
+  .odd {
+    background-color: #ffffff;
+  }
+  .even {
+    background-color: #f6f7fe;
+  }
+}

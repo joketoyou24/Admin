@@ -1,0 +1,14 @@
+.attendanceStatus {
+  display: flex;
+  height: 160vh;
+
+  .attendance__container {
+    flex: 6;
+    background-color: rgba(249, 249, 251, 255);
+
+    .attendance__content {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.login {
+  .login__container {
+    background-image: url(../../images/1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .form__container {
+      display: flex;
+      flex-direction: row;
+      width: 800px;
+      height: 600px;
+      max-width: 100%;
+      max-height: 100%;
+      background-color: #ffff;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      border-radius: 7px;
+      box-sizing: border-box;
+
+      @media (max-width: 800px) {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .form__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f4f4;
+      width: 350px;
+      border-radius: 7px;
+      margin-right: 1em;
+
+      .logo {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+      }
+
+      @media (max-width: 800px) {
+        margin-right: 0;
+        margin-bottom: 1em;
+        width: 100%;
+      }
+    }
+
+    .form__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 450px;
+
+      .form {
+        margin: auto;
+        width: 350px;
+        height: 400px;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        border-radius: 9px;
+
+        .tittle {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          margin-top: 2em;
+          gap: 12px;
+          font-weight: 800;
+          font-size: 1.2em;
+
+          .tittle__up {
+            color: #1751f0;
+          }
+        }
+      }
+
+      @media (max-width: 800px) {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.face__table {
+  max-height: 200px;
+
+  .tableHead {
+    font-weight: 600;
+  }
+
+  .tableCell {
+    background-color: #f6f7fe;
+
+    .btn {
+      padding: 3px 15px 3px 15px;
+      background-color: #a30d11;
+      border-color: #a30d11;
+      color: #ffff;
+      border-radius: 9px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .tableHead__id {
+    width: 20px;
+    font-weight: 600;
+  }
+
+  .tableHead__action {
+    width: 150px;
+    font-weight: 600;
+  }
+
+  .cell__wrapper {
+    display: flex;
+    align-items: center;
+
+    .face {
+      width: 80px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

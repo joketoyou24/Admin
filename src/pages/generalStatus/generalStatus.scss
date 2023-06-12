@@ -1,0 +1,51 @@
+.generalStatus {
+  display: flex;
+  height: 160vh;
+
+  .generalStatus__container {
+    flex: 6;
+    background-color: rgba(249, 249, 251, 255);
+
+    .status__content {
+      display: flex;
+      justify-content: center;
+
+      .content__box {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0 0 0;
+        width: 97%;
+        height: 80vh;
+        background-color: #ffffff;
+        border-radius: 7px;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+        .contentBox__form {
+          display: flex;
+          justify-content: flex-end;
+
+          .formAddnew {
+            margin: 40px 40px 0 0;
+
+            .button__addnew {
+              background-color: #1751f0;
+              height: 35px;
+              width: 100px;
+              cursor: pointer;
+              border-radius: 10px;
+              border: 1px solid #e0e0e0;
+              padding: 0 20px 0 20px;
+              color: #ffffff;
+              font-size: 12px;
+            }
+          }
+        }
+
+        .contentBox_table {
+          margin: 0 20px 0 20px;
+        }
+      }
+    }
+  }
+}

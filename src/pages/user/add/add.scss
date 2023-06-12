@@ -1,0 +1,20 @@
+.add {
+  display: flex;
+
+  .add__container {
+    flex: 6;
+    background-color: rgba(249, 249, 251, 255);
+
+    .form__container {
+      display: flex;
+      flex-direction: column;
+      width: 1280px;
+      height: 350px;
+      background-color: #ffff;
+      border-radius: 9px;
+      margin: 20px 10px 0 10px;
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    }
+  }
+}
