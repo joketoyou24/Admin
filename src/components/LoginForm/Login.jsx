@@ -21,7 +21,7 @@ const LoginForm = () => {
       ),
     };
   
-    const response = await fetch("https://rpl-production.up.railway.app/login", requestOptions);
+    const response = await fetch("process.env.REACT_APP_API_URL/login", requestOptions);
     const data = await response.json();
   
     if (!response.ok) {
