@@ -29,7 +29,8 @@
     "start": "serve build -s -n -L -p $PORT --debug",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
@@ -52,5 +53,5 @@
   "devDependencies": {
     "eslint-plugin-react": "^7.32.2"
   },
-  "proxy": "https://rpl-production.up.railway.app/"
+  "proxy": "https://back-end-production-3084.up.railway.app/"
 }

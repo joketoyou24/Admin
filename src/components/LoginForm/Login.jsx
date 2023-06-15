@@ -2,15 +2,14 @@ import "./login.scss";
 import React, { useState, useContext } from "react";
 import ErrorMessage from "./ErrorMessage";
 import { UserContext } from "../../context/userContext";
-
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [, setToken] = useContext(UserContext);
-
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const submitLogin = async () => {
     const requestOptions = {
@@ -20,18 +19,18 @@ const LoginForm = () => {
         `grant_type=&username=${email}&password=${password}&scope=&client_id=&client_secret=`
       ),
     };
-  
-    const response = await fetch("${process.env.REACT_APP_API_URL}/login", requestOptions);
+
+    const response = await fetch(`/login`, requestOptions);
     const data = await response.json();
-  
+
     if (!response.ok) {
       setErrorMessage(data.detail);
     } else {
       setToken(data.access_token);
-      window.location.href = "/home";
+      navigate("/home");
     }
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     submitLogin();

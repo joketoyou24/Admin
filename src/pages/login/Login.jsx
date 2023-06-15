@@ -4,6 +4,10 @@ import myImage from "../../images/telkomLogo.png";
 import LoginForm from "../../components/LoginForm/Login";
 
 const Login = () => {
+
+  console.log(process.env.REACT_APP_API_URL);
+
+  
   return (
     <div className="login">
       <div className="login__container">

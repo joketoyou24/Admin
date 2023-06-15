@@ -36,7 +36,7 @@ const List = () => {
           Authorization: "Bearer " + token,
         },
       };
-      const response = await fetch(`/employee/${id}`, requestOptions);
+      const response = await fetch(`https://back-end-production-3084.up.railway.app/employee/${id}`, requestOptions);
       if (!response.ok) {
         setErrorMessage("Failed to delete data");
       }
@@ -53,7 +53,7 @@ const List = () => {
           Authorization: "Bearer " + token,
         },
       };
-      const response = await fetch("/employee", requestOptions);
+      const response = await fetch("https://back-end-production-3084.up.railway.app/employee", requestOptions);
       if (!response.ok) {
         setErrorMessage("Something went wrong. Couldn't load the information");
       }
